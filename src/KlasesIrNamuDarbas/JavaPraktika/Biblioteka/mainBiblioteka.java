@@ -1,4 +1,4 @@
-package KlasesIrNamuDarbas.JavaPraktikaBiblioteka;
+package KlasesIrNamuDarbas.JavaPraktika.Biblioteka;
 /*Bibliotekos aplikacija:
 
 Sukurti klasę Autorius. Autorius turi vardą, pavardę, gimimo metus.
@@ -31,5 +31,6 @@ public class mainBiblioteka {
         biblioteka.pridetiKnyga(knyga2);
 
         biblioteka.spausdintiKnyguSarasa();
+
     }
 }

@@ -1,4 +1,4 @@
-package KlasesIrNamuDarbas.JavaPraktikaBiblioteka;
+package KlasesIrNamuDarbas.JavaPraktika.Biblioteka;
 
 public class Autorius {
     private String vardas;

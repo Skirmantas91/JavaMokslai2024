@@ -1,4 +1,4 @@
-package KlasesIrNamuDarbas.JavaPraktikaBiblioteka;
+package KlasesIrNamuDarbas.JavaPraktika.Biblioteka;
 
 public class Knyga {
     private int isleidimoMetai;

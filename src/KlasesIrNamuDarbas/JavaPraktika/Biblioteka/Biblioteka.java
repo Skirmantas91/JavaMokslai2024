@@ -1,4 +1,4 @@
-package KlasesIrNamuDarbas.JavaPraktikaBiblioteka;
+package KlasesIrNamuDarbas.JavaPraktika.Biblioteka;
 
 import java.util.ArrayList;
 import java.util.List;
