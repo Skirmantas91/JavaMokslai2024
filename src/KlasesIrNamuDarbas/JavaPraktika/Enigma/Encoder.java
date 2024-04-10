@@ -17,9 +17,7 @@ public class Encoder {
         return randomChar;
     }
 
-    public void encode() {
-        String encoded = " "
-    }
+
 
 
 }
