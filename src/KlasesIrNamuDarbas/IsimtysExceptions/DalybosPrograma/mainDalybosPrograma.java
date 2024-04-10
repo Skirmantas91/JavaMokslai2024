@@ -36,9 +36,6 @@ public class mainDalybosPrograma {
             System.out.println("Klaida: " + e.toString());
         }
 
-
     }
-
-
 
 }
