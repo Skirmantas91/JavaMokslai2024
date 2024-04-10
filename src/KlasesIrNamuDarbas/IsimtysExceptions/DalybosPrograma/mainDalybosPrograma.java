@@ -1,8 +1,6 @@
-package KlasesIrNamuDarbas.IsimtysExceptions;
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
+package KlasesIrNamuDarbas.IsimtysExceptions.DalybosPrograma;
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 /*Sukurkite sveikųjų skaičių dalybos programą, kuri pilną veiksmą ir rezultatą atspausdina
 ekrane: Pvz, jeigu vartotojas įveda skaičius 6 ir 3, programa ekrane turi išvesti: 6 / 3 = 2;
 
@@ -25,23 +23,22 @@ ArgumentIsZero exception'à;
 
 Sukurkite ArgumentIsZero exception’ą. Jame perrašykite toString() metodą, kuris grąžintų
 aiškų ir suprantamą pranešimą apie tai, kas įvyko; */
-public class InputManager {
 
-    int insertDigit() {
-        Scanner skaneris = new Scanner(System.in);
-        int skaicius = 0;
+public class mainDalybosPrograma {
+    public static void main(String[] args) {
 
+        InputManager inputManager = new InputManager();
+        String[] skaiciai = inputManager.askForInput();
         try {
-            System.out.println("Iveskite skaiciu:");
-            skaicius = skaneris.nextInt();
-        } catch (InputMismatchException e) {
-            System.out.println("Klaida - įveskite teisingą reikšmę");
-            skaneris.nextLine();
-            skaicius = insertDigit();
+            int result = IntDivider.divide(skaiciai);
+            System.out.println("Dalybos rezultatas: " + result);
+        } catch (ArgumentIsZeroException e) {
+            System.out.println("Klaida: " + e.toString());
         }
 
-        return skaicius;
+
     }
+
 
 
 }
