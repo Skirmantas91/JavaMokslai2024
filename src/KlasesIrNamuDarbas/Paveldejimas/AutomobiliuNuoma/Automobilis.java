@@ -5,12 +5,14 @@ public class Automobilis {
     private String modelis;
     private int metai;
     private double kainaUzDieną;
+    private int rida;
 
-    public Automobilis(String marke, String modelis, double kainaUzDieną, int metai) {
+    public Automobilis(String marke, String modelis, double kainaUzDieną, int metai, int rida) {
         this.marke = marke;
         this.modelis = modelis;
         this.kainaUzDieną = kainaUzDieną;
         this.metai = metai;
+        this.rida = rida;
     }
 
     public String getMarke() {
@@ -45,6 +47,14 @@ public class Automobilis {
         this.kainaUzDieną = kainaUzDieną;
     }
 
+    public int getRida() {
+        return rida;
+    }
+
+    public void setRida(int rida) {
+        this.rida = rida;
+    }
+
     @Override
     public String toString() {
         return "Automobilis{" +
@@ -52,6 +62,7 @@ public class Automobilis {
                 ", modelis='" + modelis + '\'' +
                 ", metai=" + metai +
                 ", kainaUzDiena=" + kainaUzDieną +
+                ", rida=" + rida +
                 '}';
 
 

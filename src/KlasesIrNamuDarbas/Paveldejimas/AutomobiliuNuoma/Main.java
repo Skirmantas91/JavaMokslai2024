@@ -26,7 +26,7 @@ public class Main {
         Nuoma nuoma = new Nuoma();
 
         NaftosKuroAutomobilis auto1 = new NaftosKuroAutomobilis("Toyota", "Corolla", 2018, 50, 6.5);
-        ElektrinisAutomobilis auto2 = new ElektrinisAutomobilis("Tesla", "Model S", 2020, 100, 8);
+        ElektrinisAutomobilis auto2 = new ElektrinisAutomobilis("Tesla", "Model S", 2020, 100, 80);
 
         nuoma.pridetiAutomobili(auto1);
         nuoma.pridetiAutomobili(auto2);
@@ -34,6 +34,13 @@ public class Main {
         nuoma.visoAutoparkoSpausdinimas();
 
         System.out.println("Nuomos kaina: " + nuoma.nuomosKaina(3, auto1));
+        System.out.println("Nuomos kaina: " + nuoma.nuomosKaina(3, auto2));
+
+
+        AutomobiliuDuomenuModifikatorius modifikatorius = new AutomobiliuDuomenuModifikatorius();
+
+        modifikatorius.modifikuotiParametra(auto1, 999);
+        modifikatorius.modifikuotiParametra(auto2, 555);
 
     }
 }
